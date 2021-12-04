@@ -39,7 +39,7 @@ const CandyMachine = ({walletAddress}) => {
 
     useEffect(() => {
         getCandyMachineState();
-    }, []);
+    }, [getCandyMachineState]);
 
     const getProvider = () => {
         const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST;
