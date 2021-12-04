@@ -1,0 +1,19 @@
+{
+  "name": "ely-cool",
+  "symbol": "",
+  "image": "2.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "2.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "CPoXhTeLx3vS16Uoysj2xJjpww3VkNw3RkSzxgAVdkun",
+        "share": 100
+      }
+    ]
+  }
+}

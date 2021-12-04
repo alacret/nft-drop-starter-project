@@ -1,0 +1,19 @@
+{
+  "name": "ely-salud",
+  "symbol": "",
+  "image": "7.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "7.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "CPoXhTeLx3vS16Uoysj2xJjpww3VkNw3RkSzxgAVdkun",
+        "share": 100
+      }
+    ]
+  }
+}

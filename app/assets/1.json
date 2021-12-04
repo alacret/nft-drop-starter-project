@@ -1,0 +1,19 @@
+{
+  "name": "ely-angelical",
+  "symbol": "",
+  "image": "1.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "CPoXhTeLx3vS16Uoysj2xJjpww3VkNw3RkSzxgAVdkun",
+        "share": 100
+      }
+    ]
+  }
+}

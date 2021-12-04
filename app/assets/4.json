@@ -1,0 +1,19 @@
+{
+  "name": "ely-decepcionado",
+  "symbol": "",
+  "image": "4.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "4.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "CPoXhTeLx3vS16Uoysj2xJjpww3VkNw3RkSzxgAVdkun",
+        "share": 100
+      }
+    ]
+  }
+}
