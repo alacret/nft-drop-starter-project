@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {Connection, PublicKey} from '@solana/web3.js';
 import {Program, Provider, web3} from '@project-serum/anchor';
 import {MintLayout, TOKEN_PROGRAM_ID, Token} from '@solana/spl-token';
@@ -56,7 +56,7 @@ const CandyMachine = ({walletAddress}) => {
         return provider;
     };
 
-    const getCandyMachineState = async () => {
+    const getCandyMachineState = useCallback(async () => {
 
         const provider = getProvider();
 
@@ -119,7 +119,7 @@ const CandyMachine = ({walletAddress}) => {
             }
         }
         setIsLoadingMints(false);
-    };
+    }, []);
     // Actions
     const fetchHashTable = async (hash, metadataEnabled) => {
         const connection = new web3.Connection(
@@ -357,7 +357,7 @@ const CandyMachine = ({walletAddress}) => {
         if (currentDate < dropDate) {
             console.log('Before drop date!');
             // Don't forget to pass over your dropDate!
-            return <CountdownTimer dropDate={dropDate} />;
+            return <CountdownTimer dropDate={dropDate}/>;
         }
 
         // Else let's just return the current drop date
