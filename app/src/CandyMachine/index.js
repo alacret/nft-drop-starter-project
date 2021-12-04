@@ -37,9 +37,6 @@ const CandyMachine = ({walletAddress}) => {
     const [isMinting, setIsMinting] = useState(false);
     const [isLoadingMints, setIsLoadingMints] = useState(false);
 
-    useEffect(() => {
-        getCandyMachineState();
-    }, [getCandyMachineState]);
 
     const getProvider = () => {
         const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST;
@@ -119,7 +116,12 @@ const CandyMachine = ({walletAddress}) => {
             }
         }
         setIsLoadingMints(false);
-    }, []);
+    }, [mints]);
+
+    useEffect(() => {
+        getCandyMachineState();
+    }, [getCandyMachineState]);
+
     // Actions
     const fetchHashTable = async (hash, metadataEnabled) => {
         const connection = new web3.Connection(
